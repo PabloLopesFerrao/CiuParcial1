@@ -1,9 +1,6 @@
-
 .container{
     max-width: 1000px;
-
 }
-
 
 /*HEADER */
 header{
@@ -21,11 +18,10 @@ header{
     font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
 
-/*DISEÑO DE Clases abiertas<br> registrate ahora!<br>*/
+/*DISEÑO DE PARTICIPA DEL EVENTOsregistrate ahora!*/
 .title{
     font-size: 45px;
     font-weight: bold;
@@ -40,13 +36,11 @@ header{
     width: 120px;
 }
 
-
 /*ROW CURSOS*/
 #row-evento{
     background-color: #BC85A3;
 }
 
-/**/
 .row{
     margin: 0;
 }
@@ -77,20 +71,13 @@ header{
 }
 
 /*p que esta dentro de rowNosotros*/
-
 #row-nosotros p{
     font-size: 14px;
 }
 
 
-
-
-
-
-
 .form-control{
     border-radius: 50px;
-
 }
 
 
@@ -106,8 +93,6 @@ footer a{
     text-decoration: none;
     color:white;
 }
-
-
 
 
   #row-formulario{
@@ -140,7 +125,7 @@ nav{
 
 
 
-/*TODO LOS DARK MODE A PARTIR DE ACA*/
+/*DARK MODE*/
 .oscuro header {
     background-color: #943B7A;
   }
@@ -164,7 +149,7 @@ nav{
 
 
 
-
+/*POSICIONAMIENTO MODO NOCTURNO Y DE DIA*/
   #label {
     position: absolute;
     top: 20px;
@@ -176,10 +161,7 @@ nav{
   #toggle {
     display: none;
   }
-  .oscuro {
-    
-    transition: all 1.5s ease;
-  }
+
   
 
   
