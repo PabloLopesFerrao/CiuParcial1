@@ -7,7 +7,7 @@
 
 /*HEADER */
 header{
-    background-color: #483285;
+    background-color: #BC85A3;
     height: 550px;
     position: relative;
 }
@@ -43,7 +43,7 @@ header{
 
 /*ROW CURSOS*/
 #row-evento{
-    background-color: #483285;
+    background-color: #BC85A3;
 }
 
 /**/
@@ -60,7 +60,7 @@ header{
 
 /*FONDO NOSOTROS*/
 #row-nosotros{
-    background-color: #483285;
+    background-color: #BC85A3;
     padding-top: 100px !important;
     padding-bottom: 100px !important;
 
@@ -96,7 +96,7 @@ header{
 
 /*FONDO FOOTER*/
 footer{
-    background-color:  #4B3A7F;
+    background-color:  #DAA0C8;
     padding-top: 100px !important;
     padding-bottom: 100px !important;
 }
@@ -108,28 +108,29 @@ footer a{
 }
 
 
-.lineaFooter {
-    border-top: 1px solid black;
-    height: 2px;
-    max-width: 200px;
-    padding: 0;
-    margin: 50px auto 0 auto;
-  }
 
 
   #row-formulario{
-    background-color: #483285;
+    background-color: #BC85A3;
   }
 
 
-/*Color de Menu al abrirse*/
-@media(max-width:992px){
+/*Menu al reducir pantalla*/
+@media(max-width:982px){
     .navbar-nav{
         background-color: #4F81D6;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         padding-left: 20px;
     }
+
+    #label {
+        position: relative;
+        margin-top: 250px !important;
+        right: 20px;
+        font-size: 3em;
+        cursor: pointer;
+      }
 }
 
 nav{
@@ -140,23 +141,45 @@ nav{
 
 
 /*TODO LOS DARK MODE A PARTIR DE ACA*/
-.dark-mode header {
+.oscuro header {
     background-color: #943B7A;
   }
 
 
-.dark-mode #row-evento{
+.oscuro #row-evento{
     background-color: #943B7A;
 }
 
-.dark-mode #row-nosotros{
+.oscuro #row-nosotros{
     background-color: #943B7A;
 }
 
-.dark-mode footer{
+.oscuro footer{
     background-color:  #B266B2;
 }
 
-.dark-mode  #row-formulario{
+.oscuro  #row-formulario{
     background-color: #943B7A;
   }
+
+
+
+
+  #label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3em;
+    color: rgb(16, 121, 207);
+    cursor: pointer;
+  }
+  #toggle {
+    display: none;
+  }
+  .oscuro {
+    
+    transition: all 1.5s ease;
+  }
+  
+
+  

@@ -6,21 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Landing Page Virbela</title>
   <link rel="icon" href="./assert/logoVirbela.png">
-  
+ 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="estiloCss.css">
-  
 
 </head>
 
 <body>
-
   <header>
+
+
+
+
 
 
 
@@ -29,8 +35,9 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <!--LOGO DEL MENU-->
+        <a href="index.html">
         <img class="logo" src="./assert/virbelaParaMenu.png" alt="virbela">
-
+      </a>
         <button class="navbar-toggler bg-white" data-toggle="collapse" data-target="#miLista">
           <span class="navbar-toggler-icon"></span>
 
@@ -39,45 +46,68 @@
           <ul class="navbar-nav">
 
             <li class="nav-item">
-              <a class="nav-link text-white" href="./index.html">Principal</a>
+              <a class="nav-link text-white font-weight-bold" href="index.html">Principal</a>
 
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="">Evento</a>
+              <a class="nav-link text-white font-weight-bold" href="#row-evento">Evento</a>
 
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="">Nosotros</a>
+              <a class="nav-link text-white font-weight-bold" href="#row-nosotros">Nosotros</a>
 
             </li>
+
+
+
+
+
+
+
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-bold" href="./register.html">Registro</a>
+
+            </li>
+
+                      
+            <!--REDES SOCIALES-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Redes Sociales
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://www.linkedin.com/company/virbela" target="_blank">Linkedin<i class="fab fa-linkedin fa-2x mx-2 "></i></a>
+                <a class="dropdown-item" href="https://www.facebook.com/Virbela/" target="_blank">Facebook<i class="fab fa-facebook fa-2x mx-2 "></i></a>
+                <a class="dropdown-item" href="https://www.instagram.com/virbelahq/" target="_blank">Instagram<i class="fab fa-instagram fa-2x mx-2 "></i></a>
+              </div>
+            </li>
+            
+         
           
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/register.html">Contacto</a>
-
-            </li>
             <!--BOTÓN PARA CAMBIAR ENTRE MODO NOCTURNO Y MODO CLARO-->
-<li class="nav-item">
-  <button id="toggle-button" class="btn btn-outline-secondary">Modo Nocturno/Claro</button>
-</li>
-
-
-           
-
+            <li>
+              <div class="modo">
+                <label for="toggle" id="label"><i class="fa-solid fa-moon"></i></label>
+                <input type="checkbox" id="toggle">
+              </div>
+            </li>
           </ul>
-
         </div>
+
       </div>
+
     </nav>
+
 
 
 
     <div>
       <div class="container">
-        
+
         <div class="title font-weight-bold text-white">
           Participa del evento,<br> registrate ahora!<br>
           <!--BOTON DE REGISTRO-->
-          <button class="btn mt-3" onclick="location.href='register.html'">Registrate ahora</button>
+          <button class="btn btn-primary mt-3 " onclick="location.href='register.html'">Registrate ahora</button>
         </div>
 
 
@@ -91,32 +121,24 @@
         <div class="container">
         <h1 class="text-white">Registro</h1>
 
-        <form action="mailto:pablo_lopesferrao@hotmail.com" method="post" enctype="text/plain">
-          <label for="name" class="text-white">Nombre:</label><br>
-          <input type="text" name="name"><br>
-          <label for="name" class="text-white">E-mail:</label><br>
-          <input type="text" name="mail"><br>
-          <label for="name" class="text-white">Comment:</label><br>
-          <input type="text" name="comment" size="50"><br><br>
-
-          <input type="submit" value="Send">
-          <input type="reset" value="Reset">
-          </form>
-
-
-        <form>
-            <div class="form-group">
-              <form action="mailto:pablo_lopesferrao@hotmail.com" method="post" enctype="text/plain"></form>
-                <label for="name" class="text-white">Nombre:</label>
-                <input type="text" class="form-control" id="name" name="name">
-            </div>
-            <div class="form-group">
-                <label for="email" class="text-white">Correo electrónico:</label>
-                <input type="email" class="form-control" id="email" name="email">
-            </div>
-            
-            <button type="submit" class="btn btn-default">Enviar</button>
-        </form> 
+        <form action="mailto: gabriel.molina@unahur.edu.ar" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="name" class="text-white">Nombre:</label>
+            <input type="text" class="form-control" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="text-white">E-mail:</label>
+            <input type="email" class="form-control" id="email" name="mail">
+          </div>
+          <div class="form-group">
+            <label for="comment" class="text-white">Comentario:</label>
+            <textarea class="form-control" id="comment" name="comment"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-secondary">Reiniciar</button>
+        </form>
+        
+      
 
 
 
@@ -124,18 +146,6 @@
 </div>
     
    
-<form action="mailto:pablo_lopesferrao@hotmail.com" method="post" enctype="text/plain">
-  <label for="name" class="text-white">Nombre:</label>
-  <input type="text" name="name"><br>
-  <label for="name" class="text-white">E-mail:</label><br>
-  <input type="text" name="mail"><br>
-  <label for="name" class="text-white">Comment:</label><br>
-  <input type="text" name="comment" size="50"><br><br>
-  <input type="submit" value="Send">
-  <input type="reset" value="Reset">
-  </form>
-
-
 
 
 
@@ -150,37 +160,40 @@
 
 
 
-
   <footer>
     <div class="row text-white">
       <div class="container">
-        
+
         <div class="row">
-          
+
 
 
           <div class="col">
-            <a href="index.html" class="font-weight-bold mb-4"><h4>Evento Virbela</h4></a>
-            
+            <a href="index.html" class="font-weight-bold mb-4">
+              <h4>Evento Virbela</h4>
+            </a>
+
 
           </div>
 
           <div class="col">
-            
-            
-              <h4 class="font-weight-bold mb-4">Ubicacion</h4>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.427413850594!2d-58.63984068423242!3d-34.618637765795896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8d055e548bf%3A0x738f85ea67aeabe5!2sUNaHur.%20Universidad%20Nacional%20de%20Hurlingham!5e0!3m2!1ses!2sar!4v1657066838924!5m2!1ses!2sar" 
-              width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-            
+
+
+            <h4 class="font-weight-bold mb-4 text-center">Ubicacion</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.427413850594!2d-58.63984068423242!3d-34.618637765795896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8d055e548bf%3A0x738f85ea67aeabe5!2sUNaHur.%20Universidad%20Nacional%20de%20Hurlingham!5e0!3m2!1ses!2sar!4v1657066838924!5m2!1ses!2sar"
+              width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
             <p></p>
 
           </div>
-          
+
 
           <div class="col">
 
-            <h4 class="font-weight-bold mb-4">CONTACTANOS</h4>
+            <h4 class="font-weight-bold mb-4 px-3">CONTACTANOS</h4>
             <div class="d-flex">
               <span class="material-icon">
                 <img src="./assert/footer/telefono.png" alt="Telefono">
@@ -192,7 +205,7 @@
               <span class="material-icon">
                 <img src="./assert/footer/email.png" alt="Email">
               </span>
-              <a class="px-3 mb-4" href="/register.html"> Registro</a>
+              <a class="px-3 mb-4" href="register.html"> Registro</a>
 
 
             </div>
@@ -200,9 +213,12 @@
               <span class="material-icon">
                 <img src="./assert/footer/evento.png" alt="Evento">
               </span>
-              <p class="px-3">Viberla evento</p>
+              <a class="px-3 mb-4" href="index.html"> Evento Virbela</a>
 
             </div>
+
+            
+         
 
 
           </div>
@@ -212,7 +228,7 @@
       </div>
 
     </div>
-  
+
   </footer>
 
 
@@ -229,16 +245,21 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-    <script>
-      const toggleButton = document.querySelector('#toggle-button');
-      const body = document.querySelector('body');
-    
-      toggleButton.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-      });
-    </script>
+ <!--Js para cambiar a modo nocturno/claro-->
+  <script>
+    let toggle = document.getElementById("toggle");
+    let label = document.getElementById("label");
+    toggle.addEventListener("change", (event) => {
+      let estado = event.target.checked;
+      document.body.classList.toggle("oscuro");
+      if (estado == true) {
+        label.innerHTML = '<i class="fa-solid fa-sun"></i>';
+      } else {
+        label.innerHTML = '<i class="fa-solid fa-moon"></i>';
+      }
+    });
+  </script>
 
-  
 
 </body>
 
